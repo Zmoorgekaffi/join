@@ -7,6 +7,20 @@
       <img src="./assets/img/logo_white.svg" alt="Join Logo" />
       <h1>Add Contact</h1>
       <p>Tasks are better with a team!</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="94"
+        height="3"
+        viewBox="0 0 94 3"
+        fill="none"
+      >
+        <path
+          d="M92 1.5L2 1.5"
+          stroke="#29ABE2"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+      </svg>
     </div>
   </div>
 
@@ -22,6 +36,7 @@
     >
       <div class="input-container">
         <input
+          onfocusout="highlightInvalid(this)"
           class="input-field"
           type="text"
           pattern="[a-z A-Z]+"
@@ -37,6 +52,7 @@
 
       <div class="input-container">
         <input
+          onfocusout="highlightInvalid(this)"
           class="input-field"
           type="email"
           id="add-contact-email"
@@ -48,6 +64,7 @@
 
       <div class="input-container">
         <input
+          onfocusout="highlightInvalid(this)"
           class="input-field"
           type="tel"
           pattern="[0-9]{3,15}"

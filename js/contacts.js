@@ -397,3 +397,9 @@ function returnInitials(string) {
 
   return innitials;
 }
+
+function highlightInvalid(element) {
+  if (!element.checkValidity())
+    element.parentNode.classList.add("input-invalid");
+  else element.parentNode.classList.remove("input-invalid");
+}

@@ -278,9 +278,10 @@ main {
   position: relative;
   height: 100%;
   width: 60%;
-  padding: 66px 0px;
+  padding: 66px 32px;
+  gap: 32px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -290,7 +291,7 @@ main {
   gap: 32px;
 }
 
-.input-container:has(input:invalid) {
+.input-invalid {
   border: 1px solid red;
 }
 
@@ -302,7 +303,6 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  margin-right: 72px;
   flex-shrink: 0;
 }
 
@@ -463,10 +463,6 @@ main {
   .contact-form-right {
     width: 70%;
   }
-
-  .contact-form-img-container {
-    margin-right: 36px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -518,6 +514,7 @@ main {
     width: 100%;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 30px;
+    padding: 66px 32px;
   }
   .contact-form-left img {
     display: none;
@@ -529,6 +526,7 @@ main {
   .contact-form-right {
     height: 60%;
     width: 100%;
+    padding: 0 32px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 30px;
   }
