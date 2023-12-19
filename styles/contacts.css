@@ -510,6 +510,10 @@ main {
     font-weight: 400;
   }
 
+  .contact-details-header button {
+    display: none;
+  }
+
   .contact-form-container {
     position: absolute;
     top: 80px;
