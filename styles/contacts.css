@@ -117,6 +117,10 @@ main {
   margin: 0;
 }
 
+.vector {
+  display: none;
+}
+
 .contact-details {
   margin-left: 64px;
   display: flex;
@@ -429,6 +433,7 @@ main {
 @media screen and (max-width: 1250px) {
   .contact-header {
     flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
   }
 
@@ -439,6 +444,11 @@ main {
 
   .contact-header p {
     font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .vector {
+    display: unset;
   }
 
   .contact-details .acc-initials {
